@@ -1,43 +1,96 @@
+/* GLobal */
+body {
+    margin: 0;
+}
+
+/*Header*/
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(210, 215, 214);
+    padding: 15px 20px;
 }
 
-body {
-    margin: 0;
+.nav {
+    display: flex;
+    gap: 20px;
 }
 
 .nav a {
-    margin-right: auto;
     font-size: 14px;
     text-decoration: none;
     color: black;
     
 }
 
+/* -- Main layout -- */
+
 .container {
-    background-color: rgb(212, 214, 214);
+    display: flex; 
+    gap: 20px;
     margin: 20px;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 10px;
+    align-items: flex-start;
+    background-color: rgb(169, 21, 214);
 }
 
+/* sidebar */
+.sidebar {
+    background-color: rgb(21, 214, 214);
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+/* Form */
 label {
     display: block;
     margin-bottom: 8px;
 }
 
+/* Cards*/ 
+
 .cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .card {
   background: #e0e0e0;
   padding: 12px;
   border-radius: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+/* Status Colours*/
+.status {
+    font-weight: bold;
+}
+
+.status.green { color: green; }
+.status.yellow { color: orange; }
+.status.red { color: red; }
+
+/* Choose button ( Välj knapp ) */
+.choose{
+    width: 100%;
+    background-color: blue;
+    color: white;
 }
