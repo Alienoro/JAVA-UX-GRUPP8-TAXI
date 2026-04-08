@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(210, 215, 214);
+}
+
+body {
+    margin: 0;
+}
+
+.nav a {
+    margin-right: auto;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.container {
+    background-color: rgb(212, 214, 214);
+    margin: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #e0e0e0;
+  padding: 12px;
+  border-radius: 10px;
+}

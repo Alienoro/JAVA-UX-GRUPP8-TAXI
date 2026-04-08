@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>startsida</title>
+    <title>Taxi Tiger</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="header">
+
+        <h1>Tiger Taxi</h1>
+        <nav>
+            <a href="#">Bokningar</a>
+            <a href="#">Kunder</a>
+            <a href="#">Chaufförer</a>
+        </nav>
+
+    </div>
+    <!-- SIDOPANEL -->
+    <main class="container">
+        <aside class="sidebar">
+            <h3>Start Destination:</h3>
+            <input type="text" placeholder="Laxvägen 3">
+            <h3>Slut Destination:</h3>
+            <input type="text" placeholder="Ankvägen 16">
+            <p><strong>Estimerad körtid: 34 min</strong></p>
+            <h3>Kundens namn:</h3>
+            <input type="text">
+            <h3>Telefonnummer:</h3>
+            <input type="text" placeholder="+46">
+
+            <h3>Antal Personer:</h3>
+            <select>
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+            </select>
+
+            <h3>Önskemål</h3>
+            <label>Antal väskor:</label>
+            <select>
+                <option>4</option>
+            </select>
+            <label>Antal barnstolar:</label>
+            <select>
+                <option>0</option>
+            </select>
+            <label>Fordon:</label>
+            <select>
+                <option>Kombi</option>
+            </select>
+            <label>Bagageutrymme:</label>
+            <select>
+                <option>Mellan</option>
+            </select>
+            <label>Rullstol:</label>
+            <select>
+                <option>Nej</option>
+            </select>
+            <label>Djur:</label>
+            <select>
+                <option>0</option>
+            </select>
+            <div class="buttons">
+                <button>Rensa sökfält</button>
+                <button class="primary">Sök fordon</button>
+            </div>
+        </aside>
+
+
+    </main>
+
+
+    <!-- KORT -->
+    <section class="cards">
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <strong>Kalle Körland</strong><br>
+                    Bil nr: 47
+                </div>
+                <span class="status green">Ledig</span>
+            </div>
+            <p><strong>Beräknad tid:</strong> 11:30</p>
+            <div class="route">
+                <span>Kungsgatan 4</span>
+                ->
+                <span>Lärdomsgatan 3</span>
+            </div>
+            <button class="choose">Välj</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <strong>Kalle Körland</strong><br>
+                    Bil nr: 47
+                </div>
+                <span class="status yellow">Tagen</span>
+            </div>
+
+            <p><strong>Beräknad tid:</strong> 11:30</p>
+
+            <div class="route">
+                <span>Kungsgatan 4</span>
+                →
+                <span>Lärdomsgatan 3</span>
+            </div>
+
+            <button class="choose">Välj</button>
+        </div>
+            <div class="card">
+      <div class="card-header">
+        <div>
+          <strong>Kalle Körland</strong><br>
+          Bil nr: 47
+        </div>
+        <span class="status red">Rast</span>
+      </div>
+
+      <p><strong>Beräknad tid:</strong> 11:30</p>
+
+      <div class="route">
+        <span>Kungsgatan 4</span>
+        →
+        <span>Lärdomsgatan 3</span>
+      </div>
+
+      <button class="choose">Välj</button>
+    </div>
+        <div class="card">
+      <div class="card-header">
+        <div>
+          <strong>Kalle Körland</strong><br>
+          Bil nr: 47
+        </div>
+        <span class="status green">Ledig</span>
+      </div>
+
+      <p><strong>Beräknad tid:</strong> 11:30</p>
+
+      <div class="route">
+        <span>Kungsgatan 4</span>
+        →
+        <span>Lärdomsgatan 3</span>
+      </div>
+
+      <button class="choose">Välj</button>
+    </div>
+        <div class="card">
+      <div class="card-header">
+        <div>
+          <strong>Kalle Körland</strong><br>
+          Bil nr: 47
+        </div>
+        <span class="status green">Ledig</span>
+      </div>
+
+      <p><strong>Beräknad tid:</strong> 11:30</p>
+
+      <div class="route">
+        <span>Kungsgatan 4</span>
+        →
+        <span>Lärdomsgatan 3</span>
+      </div>
+
+      <button class="choose">Välj</button>
+    </div>
+        <div class="card">
+      <div class="card-header">
+        <div>
+          <strong>Kalle Körland</strong><br>
+          Bil nr: 47
+        </div>
+       <span class="status green">Ledig</span>
+      </div>
+
+      <p><strong>Beräknad tid:</strong> 11:30</p>
+
+      <div class="route">
+        <span>Kungsgatan 4</span>
+        →
+        <span>Lärdomsgatan 3</span>
+      </div>
+
+      <button class="choose">Välj</button>
+    </div>
+    </section>
+
+
 </body>
+
 </html>
