@@ -11,60 +11,77 @@
 <body>
 
     <div class="header">
-
         <h1>Tiger Taxi</h1>
         <nav>
             <a href="#">Bokningar</a>
             <a href="#">Kunder</a>
             <a href="#">Chaufförer</a>
         </nav>
-
     </div>
+
     <!-- SIDOPANEL -->
     <main class="container">
         <aside class="sidebar">
-            <h3>Start Destination:</h3>
+            <h2>Start Destination:</h2>
             <input type="text" placeholder="Laxvägen 3">
-            <h3>Slut Destination:</h3>
+            <h2>Slut Destination:</h2>
             <input type="text" placeholder="Ankvägen 16">
-            <p><strong>Estimerad körtid: 34 min</strong></p>
-            <h3>Kundens namn:</h3>
+            <p>Estimerad körtid: 34 min</p>
+            <h2>Kundens namn:</h2>
             <input type="text">
-            <h3>Telefonnummer:</h3>
+            <h2>Telefonnummer:</h2>
             <input type="text" placeholder="+46">
 
-            <h3>Antal Personer:</h3>
+            <h2>Antal Personer:</h2>
             <select>
                 <option>1</option>
                 <option selected>2</option>
                 <option>3</option>
             </select>
 
-            <h3>Önskemål</h3>
-            <label>Antal väskor:</label>
-            <select>
-                <option>4</option>
-            </select>
-            <label>Antal barnstolar:</label>
-            <select>
-                <option>0</option>
-            </select>
-            <label>Fordon:</label>
-            <select>
-                <option>Kombi</option>
-            </select>
-            <label>Bagageutrymme:</label>
-            <select>
-                <option>Mellan</option>
-            </select>
-            <label>Rullstol:</label>
-            <select>
-                <option>Nej</option>
-            </select>
-            <label>Djur:</label>
-            <select>
-                <option>0</option>
-            </select>
+            <h2>Önskemål</h2>
+            <div class="label">
+                <label>Antal väskor:</label>
+                <select>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <div class="label">
+                <label>Antal barnstolar:</label>
+                <select>
+                    <option>0</option>
+                </select>
+            </div>
+
+            <div class="label">
+                <label>Fordon:</label>
+                <select>
+                    <option>Kombi</option>
+                </select>
+            </div>
+
+            <div class="label">
+                <label>Bagageutrymme:</label>
+                <select>
+                    <option>Mellan</option>
+                </select>
+            </div>
+
+            <div class="label">
+                <label>Rullstol:</label>
+                <select>
+                    <option>Nej</option>
+                </select>
+            </div>
+
+            <div class="label">
+                <label>Djur:</label>
+                <select>
+                    <option>0</option>
+                </select>
+            </div>
+
             <div class="buttons">
                 <button>Rensa sökfält</button>
                 <button class="primary">Sök fordon</button>
@@ -72,120 +89,206 @@
         </aside>
 
 
-    <!-- KORT -->
-    <section class="cards">
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <strong>Kalle Körland</strong><br>
-                    Bil nr: 47
-                </div>
-                <span class="status green">Ledig</span>
-            </div>
-            <p><strong>Beräknad tid:</strong> 11:30</p>
-            <div class="route">
-                <span>Kungsgatan 4</span>
-                ->
-                <span>Lärdomsgatan 3</span>
-            </div>
-            <button class="choose">Välj</button>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <strong>Kalle Körland</strong><br>
-                    Bil nr: 47
-                </div>
-                <span class="status yellow">Tagen</span>
-            </div>
+        <!-- KORT -->
+        <section class="cards">
 
-            <p><strong>Beräknad tid:</strong> 11:30</p>
-
-            <div class="route">
-                <span>Kungsgatan 4</span>
-                →
-                <span>Lärdomsgatan 3</span>
-            </div>
-
-            <button class="choose">Välj</button>
-        </div>
             <div class="card">
-      <div class="card-header">
-        <div>
-          <strong>Kalle Körland</strong><br>
-          Bil nr: 47
-        </div>
-        <span class="status red">Rast</span>
-      </div>
+                <div class="card-header">
+                    <div class="profile-pic">
+                        <img src="resources/Customer.png" alt="Profil">
+                    </div>
+                    <div class="driver-info">
+                        <strong>Kalle Körland</strong><br>
+                        <span class="bil-nr">Bil nr: 47</span>
+                        <div class="features">
+                            <span><img src="resources/Car.png"> Kombi</span>
+                            <span><img src="resources/Briefcase.png"> Mellan</span>
+                            <span><img src="resources/baby-stroller_1.png"> Barnstol</span>
+                        </div>
+                    </div>
+                    <div class="status-box">
+                        <span class="status green">Status: Ledig</span>
+                        <span class="rast">Rast: 11:30</span>
+                    </div>
+                </div>
+                <p class="pickup-text"><strong>Beräknad tid för upphämtning: 11.30</strong></p>
+                <p class="status-text">Pågående körning</p>
+                <div class="route">
+                    <span>
+                        <span>
+                            <span><img src="resources/Location.png" alt="start">Kungsgatan 4</span>
+                            <span class="arrow">→</span>
+                            <span><img src="resources/Map.png">Lärdomsgatan 3</span>
+                </div>
+                <button class="choose">Välj</button>
+            </div>
 
-      <p><strong>Beräknad tid:</strong> 11:30</p>
+            <!-- KORT -->
 
-      <div class="route">
-        <span>Kungsgatan 4</span>
-        →
-        <span>Lärdomsgatan 3</span>
-      </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="profile-pic">
+                            <img src="resources/Customer.png" alt="Profil">
+                        </div>
+                        <div class="driver-info">
+                            <strong>Kalle Körland</strong><br>
+                            <span class="bil-nr">Bil nr: 47</span>
+                            <div class="features">
+                                <span><img src="resources/Car.png"> Kombi</span>
+                                <span><img src="resources/Briefcase.png"> Mellan</span>
+                                <span><img src="resources/baby-stroller_1.png"> Barnstol</span>
+                            </div>
+                        </div>
+                        <div class="status-box">
+                            <span class="status green">Status: Ledig</span>
+                            <span class="rast">Rast: 11:30</span>
+                        </div>
+                    </div>
+                    <p class="pickup-text"><strong>Beräknad tid för upphämtning: 11.30</strong></p>
+                    <p class="status-text">Pågående körning</p>
+                    <div class="route">
+                        <span>
+                            <span>
+                                <span><img src="resources/Location.png" alt="start">Kungsgatan 4</span>
+                                <span class="arrow">→</span>
+                                <span><img src="resources/Map.png">Lärdomsgatan 3</span>
+                    </div>
+                    <button class="choose">Välj</button>
+                </div>
 
-      <button class="choose">Välj</button>
-    </div>
-        <div class="card">
-      <div class="card-header">
-        <div>
-          <strong>Kalle Körland</strong><br>
-          Bil nr: 47
-        </div>
-        <span class="status green">Ledig</span>
-      </div>
+                <!-- KORT -->
 
-      <p><strong>Beräknad tid:</strong> 11:30</p>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="profile-pic">
+                                <img src="resources/Customer.png" alt="Profil">
+                            </div>
+                            <div class="driver-info">
+                                <strong>Kalle Körland</strong><br>
+                                <span class="bil-nr">Bil nr: 47</span>
+                                <div class="features">
+                                    <span><img src="resources/Car.png"> Kombi</span>
+                                    <span><img src="resources/Briefcase.png"> Mellan</span>
+                                    <span><img src="resources/baby-stroller_1.png"> Barnstol</span>
+                                </div>
+                            </div>
+                            <div class="status-box">
+                                <span class="status green">Status: Ledig</span>
+                                <span class="rast">Rast: 11:30</span>
+                            </div>
+                        </div>
+                        <p class="pickup-text"><strong>Beräknad tid för upphämtning: 11.30</strong></p>
+                        <p class="status-text">Pågående körning</p>
+                        <div class="route">
+                            <span>
+                                <span>
+                                    <span><img src="resources/Location.png" alt="start">Kungsgatan 4</span>
+                                    <span class="arrow">→</span>
+                                    <span><img src="resources/Map.png">Lärdomsgatan 3</span>
+                        </div>
+                        <button class="choose">Välj</button>
+                    </div>
 
-      <div class="route">
-        <span>Kungsgatan 4</span>
-        →
-        <span>Lärdomsgatan 3</span>
-      </div>
+                    <!-- KORT -->
 
-      <button class="choose">Välj</button>
-    </div>
-        <div class="card">
-      <div class="card-header">
-        <div>
-          <strong>Kalle Körland</strong><br>
-          Bil nr: 47
-        </div>
-        <span class="status green">Ledig</span>
-      </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="profile-pic">
+                                    <img src="resources/Customer.png" alt="Profil">
+                                </div>
+                                <div class="driver-info">
+                                    <strong>Kalle Körland</strong><br>
+                                    <span class="bil-nr">Bil nr: 47</span>
+                                    <div class="features">
+                                        <span><img src="resources/Car.png"> Kombi</span>
+                                        <span><img src="resources/Briefcase.png"> Mellan</span>
+                                        <span><img src="resources/baby-stroller_1.png"> Barnstol</span>
+                                    </div>
+                                </div>
+                                <div class="status-box">
+                                    <span class="status green">Status: Ledig</span>
+                                    <span class="rast">Rast: 11:30</span>
+                                </div>
+                            </div>
+                            <p class="pickup-text"><strong>Beräknad tid för upphämtning: 11.30</strong></p>
+                            <p class="status-text">Pågående körning</p>
+                            <div class="route">
+                                <span>
+                                    <span>
+                                        <span><img src="resources/Location.png" alt="start">Kungsgatan 4</span>
+                                        <span class="arrow">→</span>
+                                        <span><img src="resources/Map.png">Lärdomsgatan 3</span>
+                            </div>
+                            <button class="choose">Välj</button>
+                        </div>
 
-      <p><strong>Beräknad tid:</strong> 11:30</p>
+                        <!-- KORT -->
 
-      <div class="route">
-        <span>Kungsgatan 4</span>
-        →
-        <span>Lärdomsgatan 3</span>
-      </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="profile-pic">
+                                        <img src="resources/Customer.png" alt="Profil">
+                                    </div>
+                                    <div class="driver-info">
+                                        <strong>Kalle Körland</strong><br>
+                                        <span class="bil-nr">Bil nr: 47</span>
+                                        <div class="features">
+                                            <span><img src="resources/Car.png"> Kombi</span>
+                                            <span><img src="resources/Briefcase.png"> Mellan</span>
+                                            <span><img src="resources/baby-stroller_1.png"> Barnstol</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-box">
+                                        <span class="status green">Status: Ledig</span>
+                                        <span class="rast">Rast: 11:30</span>
+                                    </div>
+                                </div>
+                                <p class="pickup-text"><strong>Beräknad tid för upphämtning: 11.30</strong></p>
+                                <p class="status-text">Pågående körning</p>
+                                <div class="route">
+                                    <span>
+                                        <span>
+                                            <span><img src="resources/Location.png" alt="start">Kungsgatan 4</span>
+                                            <span class="arrow">→</span>
+                                            <span><img src="resources/Map.png">Lärdomsgatan 3</span>
+                                </div>
+                                <button class="choose">Välj</button>
+                            </div>
 
-      <button class="choose">Välj</button>
-    </div>
-        <div class="card">
-      <div class="card-header">
-        <div>
-          <strong>Kalle Körland</strong><br>
-          Bil nr: 47
-        </div>
-       <span class="status green">Ledig</span>
-      </div>
+                            <!-- KORT -->
 
-      <p><strong>Beräknad tid:</strong> 11:30</p>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="profile-pic">
+                                            <img src="resources/Customer.png" alt="Profil">
+                                        </div>
+                                        <div class="driver-info">
+                                            <strong>Kalle Körland</strong><br>
+                                            <span class="bil-nr">Bil nr: 47</span>
+                                            <div class="features">
+                                                <span><img src="resources/Car.png"> Kombi</span>
+                                                <span><img src="resources/Briefcase.png"> Mellan</span>
+                                                <span><img src="resources/baby-stroller_1.png"> Barnstol</span>
+                                            </div>
+                                        </div>
+                                        <div class="status-box">
+                                            <span class="status green">Status: Ledig</span>
+                                            <span class="rast">Rast: 11:30</span>
+                                        </div>
+                                    </div>
+                                    <p class="pickup-text"><strong>Beräknad tid för upphämtning: 11.30</strong></p>
+                                    <p class="status-text">Pågående körning</p>
+                                    <div class="route">
+                                        <span>
+                                            <span>
+                                                <span><img src="resources/Location.png" alt="start">Kungsgatan 4</span>
+                                                <span class="arrow">→</span>
+                                                <span><img src="resources/Map.png">Lärdomsgatan 3</span>
+                                    </div>
+                                    <button class="choose">Välj</button>
+                                </div>
 
-      <div class="route">
-        <span>Kungsgatan 4</span>
-        →
-        <span>Lärdomsgatan 3</span>
-      </div>
-
-      <button class="choose">Välj</button>
-    </div>
-    </section>
+                            </section>
 
     </main>
 </body>
